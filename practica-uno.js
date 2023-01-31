@@ -1,1 +1,3 @@
 /*Practica uno*/
+
+var ingredientes = [];
