@@ -10,69 +10,85 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Practica uno - Crear Recetas</title>
+    <title>Creador de recetas de Ensaladas - Práctica uno</title>
 </head>
 <body>
-    <head>
+    <head class="title">
         <h1>Creador de recetas para ensaladas</h1>
-
     </head>
+
     <main>
-        <section>
+        <section class="ventajas">
             <figure>
-                <article>
+                <article class="articulo-uno">
                     <!--Breve explicación sobre la importancia de comer más ensaladas-->
                     <h2>Las ventajas de incluir vegetales en nuestra dieta</h2>
                     <br>
                     <p>Los vegetales, sobre todo los de hoja verde, aportan vitaminas, minerales, clorofila, etc, los cuales son necesarios para el correcto funcionamiento de nuestro cuerpo.</p> 
-            
+                </article>
+
+                <img class="tomates" src="imagenes/tomates.jpg" alt="Tomates">
+
+                <article class="articulo-dos">
                     <p>La fibra que continenen, controbuye a mantener la saciedad por más tiempo, luego de una comida, sin hacernos sentir embotados, y sin que tengamos que consumir demasiadas calorias.</p> 
                     
                     <p>El consumo de frutas y verduras actua como prebiotico, ayudando al crecimiento y proliferación de la flora intestinal buena, por lo tanto incrementando nuestra salud y correcto funcionamiento intestinal.</p>
-                    
-                    
                 </article>
-        
-            <img class="tomates" src="imagenes/tomates.jpg" alt="Tomates">
             </figure>
         </section>
 
 
-        <aside>
+        <aside class="plato">
             <figure>
                 <p>Recuerda que debe haber una porción de vegetales en cada comida del día, y que esta debe ser al menos del tamaño de la mitad del plato para estar consumiendo la cantidad adecuada </p>
 
                 <img class="verduras" src="imagenes/verduras.jpg" alt="verduras">
             </figure>
         </aside>
-        
 
-
-        </aside>
+        <section class="constitucion">
+            <!-- Sección: Construyendo correctamente la estructura de una ensalada -->
             <figure>
-                <p>Para ayudarte a planear una dieta saludable con vegetales crudos usa nuestro constructor de ensaladas</p>
-                <p>Recuerda que una ensalada es aun más deliciosa si se le agregan proteinas como: carne, pollo, lentejas, frijoles, etc </p>
-                <p>O grasas como: aguacate, aceitunas, aceite de oliva, semillas de ajonjolí, cacahuates.</p>
-                <p> Y sabores o texturas contrastantes como: pan tostado, pasas, yogurt, queso, frutas, etc.</p>
+                <p>Primero elegiremos una base para nuestra ensalada: La mejor opción la base para nuestra ensalada siempre serán las verduras de hoja verde. Como por ejemplo la lechuga, la col risada, la arugula, espinacas, etc.</p>
+
+                <p>Añade color para hacerla más apetitosa: tomate, pepino, maíz, zanahoria, betabel, col morada, pimientos de colores, etc.</p>
+
+                <p>Añade grasas buenas como: el aguacate, aceitunas, aceite de oliva, semillas de ajonjolí, cacahuates, etc.</p>
+
+                <p>Añade proteinas como: la carne, pollo, lentejas, frijoles, queso, etc</p>
+
+                <p>Para dar un sabor más delicioso añade minerales y especias, como por ejemplo: Oregano, sal de hierbas, polvo de curry, hierbas provenzales, chile en polvo, pimienta, etc.</p>
+
+                <p>Sabores o texturas contrastantes como: pan tostado, pasas, queso, frutas, etc.</p>
+
+                <p>Y por último elige un aliño, experimenta con todos y encuentra tu favorito. Próximamente en nuestra sección de aliños podrás encontrar variadas recetas de estos</p>
 
                 <img class="ensalada" src="imagenes/ensalada.jpg" alt="ensalada">
             </figure>
-        </aside>
-
-        <section>
-            <!-- Sección: Construyendo correctamente la estructura de una ensalada -->
-
-            <h3>Primero elegiremos una base para nuestra ensalada</h3>
-
-            <p>La mejor opción siempre serán las verduras de hoja verde. Como por ejemplo la lechuga, la col risada, la arugula, espinacas, etc.</p>
         </section>
+
+        <aside class="instrucciones">
+            <h3>Para ayudarte a planear una dieta saludable con vegetales crudos usa nuestro constructor de ensaladas</h3>
+            <p>Tan solo debes escribir con cuantos ingredientes cuentas en tu refrigerador o alacena, y luego poner cuales son.</p>
+            <p>El programa te ayudará a completar la receta por ti</p>
+         </aside>
 
         <section>
            <form>
                 <p>¿Cuántos ingredientes vas a agregar a tu ensalada?</p> 
                 <br>
                 <input type="text" placeholder="Especifique un número">
+                <br>
+                <p>¿Con qué ingredientes cuentas en estos momentos?</p>
+                <textarea type="text" placeholder="Cuales son"></textarea>
+                <br>
 
+                <button>
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> Enviar
+                    </span>
+                  </button>
                 
             </form>
 
@@ -80,11 +96,13 @@
         </section>
         
     </main>
+
     <footer>
         <p>Creado: AnyUS</p>
         <p class="copyright">&copy Copyright practica uno - 2023</p>
     </footer>
 
     <script src="practica-uno.js"></script>
+
 </body>
 </html>
